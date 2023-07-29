@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Recommendation</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Let us find the perfect plant for you</h1>
+    <form id="plantForm">
+      <div class="question">
+        <p>Where will you place your plant?</p>
+        <label><input type="radio" name="placement" value="inside_indirect" required>Inside with some indirect light</label>
+        <label><input type="radio" name="placement" value="inside_direct" required>Inside with a lot of indirect light</label>
+        <label><input type="radio" name="placement" value="outside" required>Outside</label>
+      </div>
+
+      <div class="question">
+        <p>Will it receive direct sunlight?</p>
+        <label><input type="radio" name="sunlight" value="yes" required>Yes</label>
+        <label><input type="radio" name="sunlight" value="no" required>No</label>
+      </div>
+
+      <div class="question">
+        <p>Do you have pets (cats or dogs)?</p>
+        <label><input type="radio" name="pets" value="yes" required>Yes</label>
+        <label><input type="radio" name="pets" value="no" required>No</label>
+      </div>
+
+      <div class="question">
+        <p>Do you tend to overwater or underwater?</p>
+        <label><input type="radio" name="watering" value="overwater" required>Overwater</label>
+        <label><input type="radio" name="watering" value="underwater" required>Underwater</label>
+        <label><input type="radio" name="watering" value="neither" required>Neither / I don’t know</label>
+      </div>
+
+      <div class="question">
+        <p>How do you define your style?</p>
+        <label><input type="radio" name="style" value="minimalism" required>I like minimalism and material colors</label>
+        <label><input type="radio" name="style" value="simple_decoration" required>I like some decoration and simple colors</label>
+        <label><input type="radio" name="style" value="lots_decoration" required>I like a lot of decoration and bright colors</label>
+      </div>
+
+      <div class="question">
+        <p>Do you want to add any extra elements to your plant?</p>
+        <label><input type="checkbox" name="extra_elements" value="moss_pole">Moss pole</label>
+        <label><input type="checkbox" name="extra_elements" value="pebbles">Pebbles</label>
+        <label><input type="checkbox" name="extra_elements" value="smaller_plants">Smaller plants</label>
+      </div>
+
+      <div class="buttons">
+        <button type="button" id="getButton" class="get_button" onclick="getPlantRecommendation()">Get your plant!</button>
+        <button type="button" id="clearButton" class="clear_button">Clear</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="recommendation" id="plantRecommendation" style="display: none;">
+    <h2>Plant Recommendation</h2>
+    <div class="plant-info">
+      <h3 id="plantName"></h3>
+      <img src="" alt="Plant Image" id="plantImage">
+    </div>
+    <div class="plant-details">
+      <p><strong>Soil:</strong> <span id="soilType"></span></p>
+      <p><strong>Pot:</strong> <span id="potType"></span></p>
+      <p><strong>Color:</strong> <span id="potColor"></span></p>
+      <p><strong>Extras:</strong> <span id="extrasList"></span></p>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
