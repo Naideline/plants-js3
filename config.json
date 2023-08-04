@@ -1,0 +1,88 @@
+{
+  "plants": [
+    {
+      "name": "Sansevieria",
+      "image": "images/plant-sansevieria.png",
+      "soil": "Composted Soil",
+      "pot": {
+        "material": "Ceramic pot",
+        "style": "Simple pot",
+        "color": "clay",
+        "image": "images/simple-ceramic-pot.png"
+      },
+      "soilBagImage": "images/soil-composted.png",
+      "extras": []
+    },
+    {
+      "name": "Aloe Vera",
+      "image": "images/plant-aloe.png",
+      "soil": "Fertilized Soil",
+      "pot": {
+        "material": "Ceramic pot",
+        "style": "Simple pot",
+        "color": "clay",
+        "image": "images/simple-ceramic-pot.png"
+      },
+      "soilBagImage": "images/soil-fertilized.png",
+      "extras": []
+    },
+    {
+      "name": "Boston Fern",
+      "image": "images/plant-fern.png",
+      "soil": "Fertilized Soil",
+      "pot": {
+        "material": "Ceramic pot",
+        "style": "Simple pot",
+        "color": "clay",
+        "image": "images/simple-clay-pot.png"
+      },
+      "soilBagImage": "images/soil-fertilized.png",
+      "extras": []
+    },
+    {
+      "name": "Monstera",
+      "image": "images/plant-monstera.png",
+      "soil": "Composted Soil",
+      "pot": {
+        "material": "Ceramic pot",
+        "style": "Simple pot decorated",
+        "color": "blue",
+        "image": "images/simple-ceramic-pot-decorated.png"
+      },
+      "soilBagImage": "images/soil-composted.png",
+      "extras": []
+    },
+    {
+      "name": "Cactus",
+      "image": "images/plant-cactus.png",
+      "soil": "Fertilized Soil",
+      "pot": {
+        "material": "Ceramic pot",
+        "style": "Painted pot decorated",
+        "color": "pink",
+        "image": "images/painted-ceramic-pot-decorated.png"
+      },
+      "soilBagImage": "images/soil-fertilized.png",
+      "extras": []
+    },
+    {
+      "name": "Peace Lily",
+      "image": "images/plant-peace-lily.png",
+      "soil": "Composted Soil",
+      "pot": {
+        "material": "Clay pot",
+        "style": "Simple pot decorated",
+        "color": "blue",
+        "image": "images/painted-clay-pot-decorated.png"
+      },
+      "soilBagImage": "images/soil-composted.png",
+      "extras": []
+    }
+  ],
+  "extrasImages": {
+    "moss_pole": "images/moss-pole.png",
+    "pebbles": "images/pebbles.png",
+    "smaller_plants": "images/mini-plants.png"
+  }
+  
+}
