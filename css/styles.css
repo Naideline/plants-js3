@@ -2,22 +2,22 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-img {
-  width: 10rem;
-}
-
 .container {
   max-width: 600px;
   padding: 20px;
 }
 
 h1 {
-  color: rgba(146, 98, 71, 0.973);
+  color: rgb(37, 37, 37);
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 13px;
 }
 
 p {
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
   padding: 10px 0;
   margin-top: 1rem;
 }
@@ -29,7 +29,7 @@ form label {
 }
 
 .get_button {
-  background-color: rgba(146, 98, 71, 0.973);
+  background-color: #8653ff;
   padding: 10px 20px;
   color: white;
   border: 3px;
@@ -41,9 +41,87 @@ form label {
 .clear_button {
   background-color: rgba(236, 236, 236, 0.973);
   padding: 10px 20px;
-  color: rgba(146, 98, 71, 0.973);
+  color: #8653ff;
   border-width: 1px;
-  border-color: rgba(146, 98, 71, 0.973);
+  border-color: #8653ff;
   border-radius: 3px;
 }
 
+.recommendation {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  margin: 160px;
+  transform: translateY(-60%);
+  width: 300px;
+  background-color: #8653ff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation h2 {
+  margin-top: 0;
+}
+
+.plant-info {
+  text-align: center;
+}
+
+.plant-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  background-color: #ffffff21;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 30px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#potImage {
+  z-index: 1;
+}
+
+#soilBagImage {
+  z-index: 2;
+}
+
+#plantImage {
+  z-index: 3;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+}
+
+.question label {
+  display: flex;
+  align-items: center;
+}
+
+.question input[type="radio"] {
+  margin-right: 10px;
+}
+
+.question input[type="checkbox"] {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,14 @@
+# Plant Recommendation Project
+- Naideline Rivera
+## Installation
+
+1. Clone the repository: `git clone https://github.com/Naideline/plants-js3.git`
+2. Install dependencies: `npm install`
+
+## Running the project
+
+- Development mode: `npm start`
+- Production build: `npm run build`
+
+The development mode will start the local server and open the project in your default web browser. The production build will bundle and minify the code for deployment.
+

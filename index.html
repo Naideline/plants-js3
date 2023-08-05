@@ -51,17 +51,24 @@
       </div>
 
       <div class="buttons">
-        <button type="button" id="getButton" class="get_button" onclick="getPlantRecommendation()">Get your plant!</button>
+        <button type="button" id="getButton" class="get_button">Get your plant!</button>
         <button type="button" id="clearButton" class="clear_button">Clear</button>
       </div>
     </form>
   </div>
 
   <div class="recommendation" id="plantRecommendation" style="display: none;">
-    <h2>Plant Recommendation</h2>
+    <h2>The perfect plant for you is...</h2>
     <div class="plant-info">
       <h3 id="plantName"></h3>
-      <img src="" alt="Plant Image" id="plantImage">
+      
+      <div class="plant-image-container" id="plantImageContainer">
+        <img src="" alt="Plant Image" id="plantImage" class="overlay">
+        <img src="" alt="Pot Image" id="potImage" class="overlay">
+        <img src="" alt="Soil Bag Image" id="soilBagImage" class="overlay">
+        <div id="extrasImageContainer"></div>
+      </div>
+      
     </div>
     <div class="plant-details">
       <p><strong>Soil:</strong> <span id="soilType"></span></p>
@@ -71,6 +78,6 @@
     </div>
   </div>
 
-  <script type="module" src="main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
