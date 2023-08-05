@@ -106,3 +106,22 @@ form label {
 #plantImage {
   z-index: 3;
 }
+
+.question {
+  display: flex;
+  flex-direction: column;
+}
+
+.question label {
+  display: flex;
+  align-items: center;
+}
+
+.question input[type="radio"] {
+  margin-right: 10px;
+}
+
+.question input[type="checkbox"] {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}

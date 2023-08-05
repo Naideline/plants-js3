@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "dev": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js --mode production"
+  }
+}
