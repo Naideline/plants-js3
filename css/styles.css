@@ -1,5 +1,9 @@
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+  width: 15rem;
 }
 
 .container {
@@ -14,10 +18,11 @@ h1 {
 
 h2 {
   font-size: 13px;
+  font-weight: bolder;
 }
 
 p {
-  font-weight: bolder;
+  font-weight: 600;
   padding: 10px 0;
   margin-top: 1rem;
 }
@@ -83,14 +88,33 @@ form label {
   width: 15rem;
   height: 20rem;
   margin-bottom: 10px;
+  margin-left: 30px;
+  background-color: #ffffff;
 }
 
-.overlay {
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  margin-right: 30px;
+}
+
+.overlay2 {
   background-color: #ffffff21;
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 30px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: 1;
 }
@@ -99,12 +123,24 @@ form label {
   z-index: 1;
 }
 
-#soilBagImage {
+#extrasImageContainer {
   z-index: 2;
 }
 
-#plantImage {
+#soilBagImage {
   z-index: 3;
+}
+
+#plantImage {
+  z-index: 4;
+}
+
+#customPlantImage {
+  z-index: 2;
+}
+
+#customPotImage {
+  z-index: 1;
 }
 
 .question {
@@ -124,4 +160,196 @@ form label {
 .question input[type="checkbox"] {
   margin-right: 10px;
   margin-bottom: 5px;
+}
+
+#customizeButton {
+  margin: 0 auto;
+  background-color: #544674;
+  padding: 15px;
+  color: #ffff;
+  border-color: #fffbfb;
+  border-radius: 10px;
+}
+
+.color-option {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#plantSelect {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #8753ff9d;
+  padding: 8px;
+  font-size: 16px;
+  width: 50%;
+  border-radius: 5px;
+  color: #070606;
+}
+
+#plantSelect:hover {
+  border-color: #4bdb2e;
+}
+
+#plantSelect:focus {
+  background-color: #fff;
+  border-color: #8653ff;
+  outline: none;
+}
+
+#plantSelect option {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  color: #080808;
+  background-color: #d9d9e2a2;
+  border: none;
+  border-bottom: 2px solid #0e0c0c;
+}
+
+.availability-button {
+  position: relative;
+  bottom: 10px;
+  left: 138%;
+  padding: 10px 40px;
+  background-color: #8653ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+}
+
+.product-button {
+  position: relative;
+  margin-top: 35rem;
+  margin-left: 53rem;
+  bottom: 10px;
+  padding: 10px 40px;
+  background-color: #8653ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+}
+
+.availability-button:hover {
+  background-color: #6c2dff;
+}
+
+.image-container {
+  position: relative;
+  background-color: #fcfcfc;
+  left: 15px;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.recommendation2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  margin: 160px;
+  transform: translateY(-60%);
+  width: 300px;
+  background-color: #8653ff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.productTitle {
+  color: #727272;
+  font-size: 16px;
+}
+
+.product-details {
+  padding: 20px;
+  width: 40%;
+}
+
+.productPrice {
+  font-size: 25px;
+}
+
+.accordion-title {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #c5bfbf;
+  margin: 5px 0;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  border-bottom: 1px solid #1f1c1c;
+  border-top: none;
+}
+
+.accordions {
+  width: 100%;
+}
+
+.accordion-title {
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.accordion.active .accordion-content {
+  display: block;
+}
+
+.accordion-content p {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.tip-icon img {
+  width: 20px;
+}
+
+.tip-text {
+  font-size: 15px;
+  padding: 1px;
+  width: 400px;
+  font-weight: 200;
+}
+
+.tip-section {
+  margin: 3px;
+}
+
+
+.product-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#productPlantImage {
+  z-index: 2; /* La planta estará por encima del tiesto */
+}
+
+#productPotImage {
+  z-index: 1; /* El tiesto estará detrás de la planta */
 }

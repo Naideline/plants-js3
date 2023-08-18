@@ -13,7 +13,7 @@
       <div class="question">
         <p>Where will you place your plant?</p>
         <label><input type="radio" name="placement" value="inside_indirect" required>Inside with some indirect light</label>
-        <label><input type="radio" name="placement" value="inside_direct" required>Inside with a lot of indirect light</label>
+        <label><input type="radio" name="placement" value="inside_direct" required>Inside with a lot of indirect  light</label>
         <label><input type="radio" name="placement" value="outside" required>Outside</label>
       </div>
 
@@ -61,23 +61,27 @@
     <h2>The perfect plant for you is...</h2>
     <div class="plant-info">
       <h3 id="plantName"></h3>
-      
+
       <div class="plant-image-container" id="plantImageContainer">
         <img src="" alt="Plant Image" id="plantImage" class="overlay">
         <img src="" alt="Pot Image" id="potImage" class="overlay">
         <img src="" alt="Soil Bag Image" id="soilBagImage" class="overlay">
         <div id="extrasImageContainer"></div>
       </div>
-      
+
     </div>
     <div class="plant-details">
-      <p><strong>Soil:</strong> <span id="soilType"></span></p>
-      <p><strong>Pot:</strong> <span id="potType"></span></p>
-      <p><strong>Color:</strong> <span id="potColor"></span></p>
-      <p><strong>Extras:</strong> <span id="extrasList"></span></p>
+      <p><span id="soilType"></span></p>
+      <p><span id="potType"></span></p>
+      <p><span id="potColor"></span></p>
+      <p>Extras:<span id="extrasList"></span></p>
     </div>
+    <button id="customizeButton">Customize Plant</button>
   </div>
 
   <script type="module" src="js/main.js"></script>
+  <!--<script type="module" src="/dist/bundle.js"></script> Para usar webpack-->
+
 </body>
+
 </html>

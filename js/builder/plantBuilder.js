@@ -1,59 +1,61 @@
-const PlantBuilder = {
-  recommendedPlant: {},
+class PlantBuilder {
+  constructor() {
+    this.plant = {};
+  }
 
   withPlantName(name) {
-    this.recommendedPlant.name = name;
+    this.plant.name = name;
     return this;
-  },
+  }
 
   withSoilType(type) {
-    this.recommendedPlant.soilType = type;
+    this.plant.soilType = type;
     return this;
-  },
+  }
 
   withPotMaterial(material) {
-    this.recommendedPlant.potMaterial = material;
+    this.plant.potMaterial = material;
     return this;
-  },
+  }
 
   withPotStyle(style) {
-    this.recommendedPlant.potStyle = style;
+    this.plant.potStyle = style;
     return this;
-  },
+  }
 
   withPotColor(color) {
-    this.recommendedPlant.potColor = color;
+    this.plant.potColor = color;
     return this;
-  },
+  }
 
   addExtras(extras) {
-    this.recommendedPlant.extras = extras; 
+    this.plant.extras = extras;
     return this;
-  },
-  
+  }
+
   withImage(image) {
-    this.recommendedPlant.image = image;
+    this.plant.image = image;
     return this;
-  },
+  }
 
   withPotImage(potImage) {
-    this.recommendedPlant.potImage = potImage;
+    this.plant.potImage = potImage;
     return this;
-  },
+  }
 
   withSoilBagImage(soilBagImage) {
-    this.recommendedPlant.soilBagImage = soilBagImage;
+    this.plant.soilBagImage = soilBagImage;
     return this;
-  },
+  }
 
   withExtrasImages(extrasImages) {
-    this.recommendedPlant.extrasImages = extrasImages;
+    this.plant.extrasImages = extrasImages;
     return this;
-  },
+  }
 
   build() {
-    return this.recommendedPlant;
-  },
-};
+    return this.plant;
+  }
+}
 
 export default PlantBuilder;

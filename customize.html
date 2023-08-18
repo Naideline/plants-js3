@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Customize Your Plant!</h1>
+    <form id="customizeForm">
+      <div class="question">
+        <p>Choose your pot:</p>
+        <h2>Pot material</h2>
+        <label><input type="radio" id="clayPot" name="pot" value="clay" >Clay</label>
+        <label><input type="radio" id="ceramicPot" name="pot" value="ceramic" >Ceramic</label>
+      </div>
+      <div class="question">
+        <p>Pot decorations:</p>
+        <label><input type="checkbox" id="potDecorationToggle" >Yes</label>
+      </div>
+
+      <div class="question" id="potColorOptions">
+        <p>Pot color:</p>
+        <label><input type="checkbox" id="potColorToggle">Yes</label>
+        <div class="pot-color-options">
+          <label><input type="radio" id="blueColor" name="potColor" value="blue"></label>
+          <label><input type="radio" id="pinkColor" name="potColor" value="pink"></label>
+          <label><input type="radio" id="greenColor" name="potColor" value="green"></label>
+          <label><input type="radio" id="purpleColor" name="potColor" value="purple"></label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p>Choose your soil:</p>
+        <label><input type="radio" id="basicSoil" name="soil" value="Basic Composted Soil" >Basic composted soil</label>
+        <label><input type="radio" id="premiumSoil" name="soil" value="Premium Fertilized Soil" >Premium fertilized soil</label>
+        <label><input type="radio" id="easyDrainageSoil" name="soil" value="Easy Drainage" >Easy drainage soil</label>
+      </div>
+  
+      <div class="question">
+        <p>Choose your plant:</p>
+        <select name="plant" id="plantSelect" required>
+          <option value="aglaonema" >Aglaonema Silver Bay</option>
+          <option value="aloe">Aloe Vera</option>
+          <option value="bostonFern">Boston Fern</option>
+          <option value="cactus">Cactus</option>
+          <option value="monstera">Monstera Deliciosa</option>
+          <option value="peaceLily">Peace Lily</option>
+          <option value="sansevieria">Sansevieria</option>
+        </select>
+      </div>
+    
+      <div class="question">
+        <p>Choose your extras:</p>
+        <label><input type="checkbox" id="mossPole" name="extras" value="moss_pole">Moss pole</label>
+        <label><input type="checkbox" id="pebbles" name="extras" value="pebbles">Pebbles</label>
+        <label><input type="checkbox" id="smallerPlants" name="extras" value="smaller_plants">Smaller plants</label>
+      </div>
+    </form>
+ 
+    <div class="recommendation">
+      <h2>Preview</h2>
+      <div class="image-container">
+        <img src="" alt="Custom Plant Image" id="customPlantImage" class="overlay2" data-default-src="images/default-plant.png">
+
+        <img src="" alt="Custom Pot Image" id="customPotImage" class="overlay2">
+      </div>
+      <p id="customPlantName"> </p>
+      <p id="customSoil">Soil:</p>
+      <p id="customPot">Pot:</p>
+      <p id="customPotColor">Color:</p>
+      <p id="customExtras">Extras:</p>
+    </div>
+    <button id="checkStoreAvailabilityBtn" class="availability-button">Check Your Availability</button>
+  </div>
+  <script type="module" src="js/customize.js"></script>
+</body>
+</html>

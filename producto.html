@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Producto</title>
+</head>
+<body>
+  <div>
+    <div class="recommendation2">
+      <h2>Your plant</h2>
+      <div class="image-container">
+        <img src="" alt="Plant Image" id="productPlantImage">
+        <img src="" alt="Pot Image" id="productPotImage">
+      </div>
+      <p id="productPlantName"></p>
+      <p id="productSoil"></p>
+      <p id="productPot"></p>
+      <p id="productPotColor"></p>
+      <p id="productExtras"></p>
+    </div>
+  </div>
+  <div class="product-details">
+    <h1 id="productTitle" class="productTitle">Plant with custom pot and special soil</h1>
+    <div id="inventoryAlert" class="inventory-alert"></div>
+    <p id="productPrice" class="productPrice">$0.00</p>
+
+    <div id="inventoryAlert" class="inventory-alert"></div>
+
+    <button id="orderNowBtn" disabled>Order now!</button>
+
+    <div class="accordions">
+      <h2 class="accordion-title">Price Breakdown</h2>
+      <div class="accordion-content" id="priceBreakdownAccordion">
+        <div class="price-breakdown">
+          <h2>Price Breakdown</h2>
+          <ul id="priceList"></ul>
+          <p id="totalPrice">Total: </p>
+        </div>
+      </div>
+
+      <h2 class="accordion-title">Inventory Alerts</h2>
+      <div class="accordion-content" id="inventoryAlertsAccordion"></div>
+
+      <h2 class="accordion-title">Plant Description</h2>
+      <div class="accordion-content" id="plantDescriptionAccordion"></div>
+
+      <h2 class="accordion-title">Caring Tips</h2>
+      <div class="accordion-content" id="caringTipsAccordion"></div>
+    </div>
+  </div>
+  <a href="customize.html"><button id="backToCustomizationBtn" class="product-button">Back to Customization</button></a>
+  <script type="module" src="js/product.js"></script>
+</body>
+</html>
