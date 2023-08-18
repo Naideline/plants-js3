@@ -1,9 +1,4 @@
-import { getPlantRecommendation } from "./modules/plantRecommendation.js";
-import { clearForm } from "./modules/form.js";
+import { setupFormListeners } from "./modules/form.js";
 
+setupFormListeners();
 
-document.getElementById("getButton").addEventListener("click", function() {
-  getPlantRecommendation();
-});
-
-document.getElementById("clearButton").addEventListener("click", clearForm);
